@@ -1,1 +1,37 @@
-k 
+body {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.text-accent {
+  color: #fb7185;
+}
+
+.btn-accent {
+  background-color: #fb7185;
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-accent:hover {
+  background-color: #f43f5e;
+  color: #000;
+}
+
+.tech-list span {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.project-card {
+  background: #020617;
+  color: #e5e7eb;
+  border: none;
+  border-radius: 12px;
+}

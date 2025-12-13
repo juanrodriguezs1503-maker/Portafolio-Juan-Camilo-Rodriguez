@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Stack Developer | Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mi Portafolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contactame</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h5 class="text-accent">Hola.</h5>
+        <h1 class="display-5 fw-bold">Soy Juan Camilo Rodríguez Sabio</h1>
+        <h2 class="fw-semibold mb-4">Desarrollador Full Stack</h2>
+
+        <div class="mb-4">
+          <a href="#contact" class="btn btn-accent me-2">Proyectos</a>
+          <a href="#" class="btn btn-outline-light">Mi resumen</a>
+        </div>
+
+        <div class="tech-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Java</span>
+          <span>Node.js</span>
+          <span>Git</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="./ASSETS/Juan.jpeg" class="img-fluid rounded-4 shadow" alt="Profile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 bg-black">
+  <div class="container text-center">
+    <h2 class="fw-bold">Sobre mi</h2>
+    <p class="text-muted mt-3">
+      Desarrollador Full Stack con enfoque en frontend y backend, apasionado
+      por crear soluciones eficientes, escalables y bien estructuradas.
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h3 class="text-accent">5+</h3>
+        <p>Proyectos</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="text-accent">100%</h3>
+        <p>Compromiso</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="text-accent">1+</h3>
+        <p>Años aprendiendo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Proyectos</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Sistema de Reservas</h5>
+            <p class="card-text">Aplicación Java con POO y Git.</p>
+            <a href="#" class="btn btn-sm btn-accent">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Portafolio Web</h5>
+            <p class="card-text">HTML, CSS, JS y Bootstrap.</p>
+            <a href="#" class="btn btn-sm btn-accent">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">API Backend</h5>
+            <p class="card-text">API REST para gestión de datos.</p>
+            <a href="#" class="btn btn-sm btn-accent">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-black">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold text-center mb-4">Contáctame</h2>
+
+        <form id="contactForm">
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea id="message" class="form-control" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent w-100">
+            Enviar mensaje
+          </button>
+        </form>
+
+        <p id="savedMessage" class="text-center text-muted mt-3"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-3 bg-black">
+  <p class="mb-0">© 2025 Juan Camilo Rodríguez sabio | Desarrollador Full Stack</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
