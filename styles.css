@@ -22,11 +22,13 @@ body {
   color: #000;
 }
 
-.tech-list span {
-  display: inline-block;
-  margin-right: 12px;
-  font-size: 14px;
-  opacity: 0.8;
+.tech-badge {
+  background: #020617;
+  border: 1px solid #1f2933;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  opacity: 0.85;
 }
 
 .project-card {
@@ -34,4 +36,15 @@ body {
   color: #e5e7eb;
   border: none;
   border-radius: 12px;
+  overflow: hidden;
 }
+
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 700px;
+}
+

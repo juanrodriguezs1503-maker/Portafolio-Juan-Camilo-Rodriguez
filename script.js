@@ -18,7 +18,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   localStorage.setItem("contactData", JSON.stringify(contactData));
 
   document.getElementById("savedMessage").textContent =
-    "Mensaje enviado y guardado correctamente ✔";
+    "Mensaje enviado correctamente ✔";
 
   this.reset();
 });
